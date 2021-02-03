@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="language\PicChu.de-de.json" />
+    <None Remove="language\PicChu.en-gb.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="language\PicChu.en-gb.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="language\PicChu.de-de.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="doozr.common.application.autofac" Version="1.0.144" />
+    <PackageReference Include="doozr.common.application.desktop.wpf.autofac" Version="1.0.144" />
+    <PackageReference Include="doozr.common.application.desktop.wpf.caliburnmicro" Version="1.0.144" />
+    <PackageReference Include="doozr.common.i18n.autofac" Version="1.0.144" />
+    <PackageReference Include="doozr.common.i18n.wpf" Version="1.0.144" />
+    <PackageReference Include="doozr.common.ipc.autofac" Version="1.0.144" />
+    <PackageReference Include="doozr.common.logging" Version="1.0.144" />
+    <PackageReference Include="doozr.common.logging.autofac" Version="1.0.144" />
+    <PackageReference Include="doozr.common.translation.translatableapplication.autofac" Version="1.0.144" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PicChu.Autofac\PicChu.Autofac.csproj" />
+    <ProjectReference Include="..\PicChu.DefaultStyle\PicChu.DefaultStyle.csproj" />
+    <ProjectReference Include="..\PicChu.Ui\PicChu.Ui.csproj" />
+  </ItemGroup>
+
+</Project>

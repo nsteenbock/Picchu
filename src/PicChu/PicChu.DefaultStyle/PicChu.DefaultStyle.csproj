@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="&quot;$(ProjectDir)_Tools\ResMerger.exe&quot; &quot;$(ProjectDir)\&quot; $(ProjectName) &quot;/LookAndFeel.xaml&quot; &quot;/LookAndFeelBundled.xaml&quot;" />
+  </Target>
+
+  <ItemGroup>
+    <Page Remove="Colors\Brushes.xaml" />
+    <Page Remove="Colors\Colors.xaml" />
+    <Page Remove="LookAndFeel.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Colors\Brushes.xaml" />
+    <None Include="Colors\Colors.xaml" />
+    <None Include="LookAndFeel.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FontAwesome5" Version="2.0.8" />
+  </ItemGroup>
+
+</Project>

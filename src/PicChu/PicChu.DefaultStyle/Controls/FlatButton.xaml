@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:PicChu.DefaultStyle.Controls">
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="/PicChu.DefaultStyle;component/Colors/Brushes.xaml"/>
+	</ResourceDictionary.MergedDictionaries>
+
+	<Style x:Key="FlatButtonStyle" TargetType="Button">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="Button">
+					<Border x:Name="buttonborder" BorderBrush="{DynamicResource FlatButtonBorderBrush}" Margin="20"
+						BorderThickness="4" Padding="20" CornerRadius="5" Background="{DynamicResource FlatButtonBackgroundBrush}">
+						<ContentPresenter Content="{TemplateBinding Content}"/>
+					</Border>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsMouseOver" Value="True">
+							<Setter Property="Border.Background" TargetName="buttonborder" 
+								Value="{DynamicResource FlatButtonHightlightBackgroundBrush}"/>
+							<Setter Property="Border.BitmapEffect">
+								<Setter.Value>
+									<DropShadowBitmapEffect Color="Gray"/>
+								</Setter.Value>
+							</Setter>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+</ResourceDictionary>

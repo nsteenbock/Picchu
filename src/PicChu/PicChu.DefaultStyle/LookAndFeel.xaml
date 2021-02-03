@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="/PicChu.DefaultStyle;component/Colors/Colors.xaml"/>
+		<ResourceDictionary Source="/PicChu.DefaultStyle;component/Colors/Brushes.xaml"/>
+
+		<!-- Controls -->
+		<ResourceDictionary Source="/PicChu.DefaultStyle;component/Controls/FlatButton.xaml"/>
+		
+		<!-- Icons -->
+		<ResourceDictionary Source="/PicChu.DefaultStyle;component/Icons/FontIcons.xaml"/>
+	</ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
