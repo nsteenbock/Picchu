@@ -9,7 +9,8 @@
 		<Setter Property="Template">
 			<Setter.Value>
 				<ControlTemplate TargetType="Button">
-					<Border x:Name="buttonborder" BorderBrush="{DynamicResource FlatButtonBorderBrush}" Margin="20"
+					<Border x:Name="buttonborder" 
+						BorderBrush="{Binding RelativeSource={RelativeSource AncestorType={x:Type Button}},Path=Foreground}" Margin="20"
 						BorderThickness="4" Padding="20" CornerRadius="5" Background="{DynamicResource FlatButtonBackgroundBrush}">
 						<ContentPresenter Content="{TemplateBinding Content}"/>
 					</Border>

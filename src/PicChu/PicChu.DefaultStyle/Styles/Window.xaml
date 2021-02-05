@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:PicChu.DefaultStyle.Styles">
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="/PicChu.DefaultStyle;component/Colors/Brushes.xaml"/>
+	</ResourceDictionary.MergedDictionaries>
+
+	<Style TargetType="{x:Type Window}">
+		<Style.Setters>
+			<Setter Property="Background" Value="{DynamicResource ApplicationBackgroundBrush}"/>
+			<Setter Property="Foreground" Value="{DynamicResource ApplicationForegroundBrush}"/>
+		</Style.Setters>
+    </Style>
+</ResourceDictionary>

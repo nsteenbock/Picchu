@@ -9,13 +9,26 @@
       >
 	<Grid>
 		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-			<Button Style="{DynamicResource ResourceKey=FlatButtonStyle}" Foreground="White">
+			<StackPanel.Resources>
+				<Style TargetType="Label">
+					<Style.Setters>
+						<Setter Property="Foreground" Value="{DynamicResource FlatButtonForegroundBrush}"/>
+					</Style.Setters>
+				</Style>
+			</StackPanel.Resources>
+			<Button Style="{DynamicResource ResourceKey=FlatButtonStyle}" Foreground="#F0F0F0">
 				<StackPanel Orientation="Vertical">
 					<ContentControl Content="{DynamicResource Icon_OpenCollection}" />
-					<Label HorizontalAlignment="Center" FontSize="20" Foreground="White">Open Collection</Label>
+					<Label HorizontalAlignment="Center" FontSize="20" Content="{i18n:Translate welcome_open_collection}" />
 				</StackPanel>
 			</Button>
-			<Button Style="{DynamicResource ResourceKey=FlatButtonStyle}" Foreground="White">Another Button</Button>
+			<Button x:Name="CreateCollection" Style="{DynamicResource ResourceKey=FlatButtonStyle}" 
+				Foreground="{DynamicResource FlatButtonForegroundBrush}">
+				<StackPanel Orientation="Vertical">
+					<ContentControl Content="{DynamicResource Icon_CreateCollection}" />
+					<Label HorizontalAlignment="Center" FontSize="20" Content="{i18n:Translate welcome_create_collection}" />
+				</StackPanel>
+			</Button>
 		</StackPanel>
 	</Grid>
 </UserControl>

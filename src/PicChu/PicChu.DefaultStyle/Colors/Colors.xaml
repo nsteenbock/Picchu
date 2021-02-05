@@ -4,7 +4,8 @@
 
     <!-- Standard colors -->
 	<Color x:Key="ApplicationBackgroundColor">#252526</Color>
+	<Color x:Key="ApplicationForegroundColor">#F0F0F0</Color>
 	<Color x:Key="FlatButtonBackgroundColor">#3D3D40</Color>
 	<Color x:Key="FlatButtonHighlightBackgroundColor">#5D5D60</Color>
-	<Color x:Key="FlatButtonBorderColor">White</Color>
+	<Color x:Key="FlatButtonForegroundColor">White</Color>
 </ResourceDictionary>

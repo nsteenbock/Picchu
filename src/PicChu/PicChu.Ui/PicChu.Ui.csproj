@@ -6,8 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Caliburn.Micro" Version="4.0.136-rc" />
     <PackageReference Include="Caliburn.Micro.Core" Version="4.0.136-rc" />
-    <PackageReference Include="doozr.common.i18n.wpf" Version="1.0.144" />
+    <PackageReference Include="doozr.common.application.desktop.wpf.dialogs.contracts" Version="1.0.145" />
+    <PackageReference Include="doozr.common.i18n.wpf" Version="1.0.145" />
   </ItemGroup>
 
 </Project>

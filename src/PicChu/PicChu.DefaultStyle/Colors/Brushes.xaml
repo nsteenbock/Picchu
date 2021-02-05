@@ -7,7 +7,8 @@
 
 	<!-- Standard brushes -->
 	<SolidColorBrush x:Key="ApplicationBackgroundBrush" Color="{StaticResource ApplicationBackgroundColor}"/>
+	<SolidColorBrush x:Key="ApplicationForegroundBrush" Color="{StaticResource ApplicationForegroundColor}"/>
 	<SolidColorBrush x:Key="FlatButtonBackgroundBrush" Color="{StaticResource FlatButtonBackgroundColor}"/>
 	<SolidColorBrush x:Key="FlatButtonHightlightBackgroundBrush" Color="{StaticResource FlatButtonHighlightBackgroundColor}"/>
-	<SolidColorBrush x:Key="FlatButtonBorderBrush" Color="{StaticResource FlatButtonBorderColor}"/>
+	<SolidColorBrush x:Key="FlatButtonForegroundBrush" Color="{StaticResource FlatButtonForegroundColor}"/>
 </ResourceDictionary>

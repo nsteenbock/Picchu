@@ -8,5 +8,11 @@
 		
 		<!-- Icons -->
 		<ResourceDictionary Source="/PicChu.DefaultStyle;component/Icons/FontIcons.xaml"/>
+
+		<!-- Styles -->
+		<ResourceDictionary Source="/PicChu.DefaultStyle;component/Styles/Button.xaml"/>
+		<ResourceDictionary Source="/PicChu.DefaultStyle;component/Styles/Window.xaml"/>
+		<ResourceDictionary Source="/PicChu.DefaultStyle;component/Styles/Label.xaml"/>
+
 	</ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

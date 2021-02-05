@@ -1,4 +1,18 @@
-﻿[
-	{	"Key": "hello_world",	"Value": "Hallo Welt"	},
-	{	"Key": "click_me",	"Value": "Klick mich"	}
+[
+  {
+    "Key": "click_me",
+    "Value": "Klick mich"
+  },
+  {
+    "Key": "hello_world",
+    "Value": "Hallo Welt"
+  },
+  {
+    "Key": "welcome_create_collection",
+    "Value": "Neues Album anlegen"
+  },
+  {
+    "Key": "welcome_open_collection",
+    "Value": "Album öffnen"
+  }
 ]

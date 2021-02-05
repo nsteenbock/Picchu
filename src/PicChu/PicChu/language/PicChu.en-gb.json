@@ -1,4 +1,18 @@
-﻿[
-	{	"Key": "hello_world",	"Value": "Hello world"	},
-	{	"Key": "click_me",	"Value": "Click me"	}
+[
+  {
+    "Key": "click_me",
+    "Value": "Click me"
+  },
+  {
+    "Key": "hello_world",
+    "Value": "Hello world"
+  },
+  {
+    "Key": "welcome_create_collection",
+    "Value": "Create new Collection"
+  },
+  {
+    "Key": "welcome_open_collection",
+    "Value": "Open Collection"
+  }
 ]

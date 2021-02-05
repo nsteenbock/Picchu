@@ -4,5 +4,6 @@
 	xmlns:fa5="http://schemas.fontawesome.com/icons/">
 
 	<fa5:FontAwesome x:Key="Icon_OpenCollection" FontSize="200" Icon="Regular_FolderOpen" />
+	<fa5:FontAwesome x:Key="Icon_CreateCollection" FontSize="200" Icon="Regular_Images" />
 
 </ResourceDictionary>

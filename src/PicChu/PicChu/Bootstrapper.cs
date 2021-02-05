@@ -3,6 +3,7 @@ using Doozr.Common.Application;
 using Doozr.Common.Application.Desktop.Wpf;
 using Doozr.Common.Application.Desktop.Wpf.Autofac;
 using Doozr.Common.Application.Desktop.Wpf.CaliburnMicro;
+using Doozr.Common.Application.Desktop.Wpf.Dialogs;
 using Doozr.Common.I18n;
 using Doozr.Common.I18n.Autofac;
 using Doozr.Common.I18n.Wpf;
@@ -22,6 +23,7 @@ namespace PicChu
 		protected override void PrepareRegistration()
 		{
 			RegisterUiAssemblyContaining<PicChu.Ui.ViewModels.ShellViewModel>();
+			RegisterUiAssemblyContaining<DialogManager>();
 		}
 
 		protected override void ConfigureContainer(ContainerBuilder builder)
@@ -35,6 +37,8 @@ namespace PicChu
 			builder.RegisterModule<IpcModule>();
 			builder.RegisterModule<I18nModule>();
 			builder.RegisterModule<TranslatableApplicationModule>();
+
+			builder.RegisterType<DialogManager>().As<IDialogManager>();
 
 			// Application specific modules
 			builder.RegisterModule<PicChuApplicationModule>();
